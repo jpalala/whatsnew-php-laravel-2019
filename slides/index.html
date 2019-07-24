@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2><a href="https://laravel.com/docs/5.8/api-authentication#generating-tokens">Token guard token hashing</a></h2>
+					<p> supports storing tokens as SHA-256 hashes</p>
+
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+## Cache TTL
+```php
+    // Laravel 5.7 - Store item for 5 minutes...
+    Cache::put('foo', 'bar', 10);
+
+    // Laravel 5.8 - Store item for 5 seconds...
+    Cache::put('foo', 'bar', 10);
+```
+
+					</textarea>
+				</section>
+
+				<section><h2>Artisan serve improvements</h2></section>
+				<section><h2>Mock testing helper methods</h2></section>
+				<section>
+					<section>Laravel News</section>
+					<section data-markdown>
+					<textarea data-template>
+### April 
+
+- April 18: [Guzzler Testing Library](https://laravel-news.com/guzzler-testing-library)
+- April 23: [Laraberg](https://laravel-news.com/laraberg-editor)
+- April 24: [Job-based Retry delay](https://laravel-news.com/job-based-retry-delay)
+					</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+### May 
+
+- May 03: [Laravel mix alias](https://laravel-news.com/laravel-mix-alias)
+- May 10: [Short Arrow functions coming to PHP](https://laravel-news.com/short-arrow-functions)
+- May 15: [Laravel Tappable Trait](https://laravel-news.com/laravel-5-8-17-tappable-trait)
+							</textarea>
+					</section>
+
+
+					<section data-markdown>
+						<textarea data-template>
+
+### June
+
+- June 03: [Laravel SNS (Amazon Simple Notification Service) Events package](https://laravel-news.com/laravel-sns-events-package)
+- June 05: [Array Collapse Performance Improvement in Laravel 5.8.20](https://laravel-news.com/laravel-5-8-20)
+- June 10:  [LaraHead SEO Package](https://laravel-news.com/lara-head-seo-package)
+- June 24: [Laravel Eloquent UUID](https://laravel-news.com/eloquent-uuid)
+
+
+						</textarea>
+					</section>
+
+				</section>
+					
+					<section>
+							<section><h1>PHP News</h1></section>
+							<section><h4>JSON_THROW_ON_ERROR</h4></section>
+							<section>
+								<h2>Argon2</h2> <p>Evolution of bcrypt and scrypt algo
+							</section>
+					<section>
+						<a href="https://laravel-news.com/php-trailing-commas-functions">PHP 7.3: Trailing Commas in Function Calls</a>
+					</section>
+					<section>
+					
+					 	<a href="https://www.php.net/manual/en/migration71.new-features.php">PHP Void type and Nullable Types</a>
+					 
+					</section>
+					<section>
+						<h4>PHP Multi catch exception handling</h4>
+						<img src="multiple-catch-exceptions.jpg" />
+					</section>
+					<section  data-markdown>
+						<textarea data-template>
+						 ### PHP  Symmetric array destructuring:
+						 - `[]` instead of `list()`
+						</textarea>
+				
+					</section>
+					<section> 
+						<a href="array-destructuring.png" target="_blank"><img src="array-destructuring.png" title="Array destructuring" height="450" width="300"></a>
+					</textarea>
+					</section>					
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
